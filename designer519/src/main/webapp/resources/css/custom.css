@@ -1,0 +1,311 @@
+ .verticaltab .x-tab-wrap{
+    position: absolute;
+    display: block;
+    padding-left: 20px;
+    transform: rotate(90deg);
+  }
+
+.verticaltab .x-tab-button{
+    position: absolute;
+    display: block;
+    padding-left: 0px;
+  }
+.verticaltab  .x-tab-inner{
+      font-size:15px;
+  }
+.verticaltab  .x-tab{
+     width:30px;
+  }
+ .verticaltab .x-tab-bar-strip-default{
+      background-color: transparent;
+  }
+
+.x-grid-row-over .x-grid-cell-inner {
+    font-family: Microsoft Yahei;
+    font-weight: bold;
+    color:blue;
+    font-size:16px;
+} 
+.x-grid-row td, .x-grid-summary-row td {  
+    vertical-align: middle;  
+}  
+
+#instructions ul li {
+    list-style-type:disc;
+    list-style-position:outside;
+    font-size:12px;
+    margin:0px 0px 0px 20px;
+}
+
+/* Icons */
+.ux-notification-icon-information {
+    background-image: url('../image/notification/icon16_info.png');
+}
+
+.ux-notification-icon-error {
+    background-image: url('../image/notification/icon16_error.png');
+}
+
+
+/* Using standard theme */
+.ux-notification-window .x-window-body {
+    text-align: center;
+    padding: 15px 5px 15px 5px;
+}
+
+
+/* Custom styling */
+.ux-notification-light .x-window-header {
+    background-color: transparent;
+}
+
+body .ux-notification-light {
+    background-image: url('../image/notification/fader.png');
+}
+
+.ux-notification-light .x-window-body {
+    text-align: center;
+    padding: 15px 5px 20px 5px;
+    background-color: transparent;
+    border: 0px solid white;
+}
+
+.pics div.pic {
+    border:1px solid #000; 
+    width:230px;
+    height:100px;
+    margin:8px 17px;
+    float:left;
+    cursor:pointer;
+}
+.pics div.div1{
+   float:left;
+   height:100%;
+   width:50%;
+}
+.pics div.div2{
+   float:left;
+   height:100%;
+   width:50%;
+   overflow: hidden;
+   text-align:center;
+   display: table;
+   position: relative;
+}
+.pics div.div3A{
+   display: table-cell;
+   vertical-align: middle;
+   background-color: #0066CC;
+   color: #fff;
+}
+.pics div.div3B{
+   display: table-cell;
+   vertical-align: middle;
+   color:#515151;
+}
+.pics img{
+   height:100%;
+   width:100%;
+}
+.pics div.pic-hover {
+    background-color: #eee;
+}
+
+.panels div.panel{
+    margin:8px 17px;
+    float:left;
+    cursor:pointer;
+}
+.x-action-col-icon{
+    margin: 0px 5px;
+}
+
+.btn1 {
+     background-color: inherit !important;
+    border-color: transparent !important;
+   background-image: url(../image/button/btn2.ico)!important;
+   background-size: 38px 38px;
+   background-repeat:no-repeat;
+}
+
+.btn1:hover {
+   background-image: url(../image/button/btn3.ico)!important;
+}
+
+.btn1:active {
+    background-image: url(../image/button/btn2.ico)!important;
+}
+
+/*按钮默认样式  button1用于中间面板header里面的按钮*/
+.btn2 {
+    background-color: inherit !important;
+    background-image: inherit !important;
+    border: 1px;
+
+}
+
+.btn2 .x-btn-inner {
+    font-family: 'Microsoft YaHei';
+    font-size: 18px !important;
+    color: white !important;
+    font-weight: normal;
+}
+
+/*按钮鼠标划过样式*/
+.btn2:hover .x-btn-inner {
+    background: #fcab2b;
+    border-radius: 5px;
+}
+
+
+.btn3 .x-btn-inner {
+   background: #fcab2b;
+    border-radius: 5px;
+}
+
+
+/*创建于20150701*/
+/*二级菜单样式*/
+.secondMenuButton{
+	border: 0px;
+	border-radius:0px;
+	background: #32323A;
+}
+
+.secondMenuButton:hover {
+	border: 0px;
+	border-radius:0px;
+	background-color: rgba(255, 255, 255, 0.2);
+	
+}
+
+.secondMenuButton:active {
+	border: 0px;
+	border-radius:0px;
+	background-color: rgba(54, 141,204, 0.8);
+}
+
+.secondMenuButton  .x-btn-inner {
+	color: white !important;
+	font-family: "Source-Han-Light" !important;
+	font-size: 14px;
+}
+
+
+.secondMenuButton-focus{
+	border: 0px;
+	border-radius:0px;
+	background: #368DCC;
+}
+
+/*提醒事项样式  */
+.remind{
+	padding:10px;
+	display: table;
+    height: 100px !important;
+    border:1px  #ccc;
+    border-style:none none solid none;
+	width: 100%;
+}
+
+/*提醒事项样式  */
+.remindText{
+	text-align:left;
+	vertical-align: middle;
+	margin: auto 10px!important;
+	width: 80%;
+	display: table-cell;
+    vertical-align: middle;
+    color:#515151;
+    font-size: 13px;
+}
+
+/*提醒事项样式  */
+.remindDate{
+	text-align:right !important;
+	margin: auto !important;
+	width: 20%;
+	display: table-cell;
+    vertical-align: middle;
+    color:#515151;
+     font-size: 13px;
+}
+
+/* 头像样式 */
+.staffHeadImg{
+	border-radius: 240px; 
+	border: 5px solid rgb(255, 255, 255); 
+	box-shadow: rgba(255, 255, 255, 0.6) 0px 0px 30px inset; 
+	width: 90px; 
+	height: 90px; 
+	margin: 0px !important;
+}
+
+/* 表格样式 请注释掉Ext中GirdPanel的title */
+.extGridCls{
+	border-bottom:1px solid #ccc;
+	border-left:1px solid #ccc;
+	border-right:1px solid #ccc;
+	border-top:2px solid #0099cc;
+	padding:0 0 0 0;
+	margin: 10 10 10 10;
+}
+/* panel样式 请注释掉Ext中Panel的title*/
+.extPanelCls{
+	border-top:2px solid #0099cc;
+	padding:0 0 0 0;
+	margin: 10 10 10 10;
+}
+
+/* 表格中内容居中 */
+.extGridColumnMiddleCls{
+	vertical-align: middle;
+}
+/* window统一样式 */
+.extWindowCls{
+	border:1px solid #549ED3;
+}
+/* 可编辑Field样式改变成不可编辑的field */
+.extTextfieldReadOnlyCls{
+	border:none;
+	background: none;
+}
+
+/* 常用蓝色按钮 */
+.blueButton{
+	background: #3eabe6;
+	border: none;
+}
+
+.blueButton .x-btn-inner{
+	color:#fff !important;
+}
+
+/*隐藏textfield边框*/
+.fieldstyle1 .x-form-field:not(.x-field-form-focus) {
+    border: 1px solid transparent;
+    color:#FFF;
+    text-align:end;
+    font-size: 16px;
+    background: none;
+}
+
+/*隐藏datefield尾部日期选择框和combobox尾部下拉框*/
+.fieldstyle1 .x-form-item-body:not(.x-form-trigger-wrap-focus) .x-form-trigger {
+    background: none;
+    background-color:#FFF!important;
+    border-bottom: 1px solid transparent;
+}
+
+/*隐藏datefield和combobox边框*/
+.fieldstyle1 .x-form-item-body:not(.x-form-trigger-wrap-focus) .x-form-trigger-wrap{
+    background: none;
+   border: 1px solid transparent;
+}
+
+.fieldstyle2 .x-form-text {
+    border-color:#FFF #FFF #FFF #E2E9ED;
+}
+.fieldstyle2 .x-form-item-body .x-form-trigger-wrap{
+    border-color:#FFF #FFF #FFF #E2E9ED;
+}

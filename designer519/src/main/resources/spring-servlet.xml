@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:mvc="http://www.springframework.org/schema/mvc" 
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xmlns:context="http://www.springframework.org/schema/context"
+       xmlns:util="http://www.springframework.org/schema/util"
+       xmlns:p="http://www.springframework.org/schema/p"
+       xsi:schemaLocation=" 
+                http://www.springframework.org/schema/beans 
+                http://www.springframework.org/schema/beans/spring-beans.xsd 
+                http://www.springframework.org/schema/context 
+                http://www.springframework.org/schema/context/spring-context.xsd 
+                http://www.springframework.org/schema/util
+	        http://www.springframework.org/schema/util/spring-util.xsd
+                http://www.springframework.org/schema/mvc 
+                http://www.springframework.org/schema/mvc/spring-mvc.xsd">
+
+    <context:component-scan base-package="com.system.controller" />
+    <context:component-scan base-package="org.activiti.rest.editor"/>
+    <context:component-scan base-package="org.activiti.rest.diagram"/>
+
+    <mvc:annotation-driven />  
+    <mvc:default-servlet-handler/>
+
+    <bean class="org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping" />  
+    <bean class="org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter" > 
+        <property name="messageConverters">  
+            <util:list id="beanList">  
+                <ref bean="byteArrayHttpMessageConverter"/>  
+                <ref bean="mappingJackson2HttpMessageConverter"/>  
+            </util:list>  
+        </property>  
+    </bean>  
+    <bean id="byteArrayHttpMessageConverter" class="org.springframework.http.converter.ByteArrayHttpMessageConverter"/>
+    <bean id="mappingJackson2HttpMessageConverter" class="org.springframework.http.converter.json.MappingJackson2HttpMessageConverter">  
+        <property name="supportedMediaTypes">  
+            <list>  
+                <value>text/html;charset=UTF-8</value>  
+            </list>  
+        </property>  
+    </bean>  
+    
+    <bean id="multipartResolver"  
+              class="org.springframework.web.multipart.commons.CommonsMultipartResolver"
+              p:defaultEncoding="UTF-8"
+              p:maxUploadSize="524288000"> 
+    </bean>  
+
+    <mvc:resources location="/ext/" mapping="/ext/**"/>
+    <mvc:resources location="/app/" mapping="/app/**"/>
+    <mvc:resources location="/resources/" mapping="/resources/**"/>
+
+    <!-- 配置jsp视图解析器 -->
+    <bean class="org.springframework.web.servlet.view.InternalResourceViewResolver">
+        <property name="viewClass"
+                  value="org.springframework.web.servlet.view.JstlView" />
+        <property name="prefix" value="/WEB-INF/view/" />
+        <property name="suffix" value=".jsp" />
+    </bean>
+
+</beans>

@@ -1,0 +1,3 @@
+spring boot整合activiti
+
+框架启动会自动部署resources/processes/下的流程

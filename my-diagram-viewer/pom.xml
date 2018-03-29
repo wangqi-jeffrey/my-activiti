@@ -1,0 +1,260 @@
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
+	<modelVersion>4.0.0</modelVersion>
+	<groupId>my-diagram-viewer</groupId>
+	<artifactId>my-diagram-viewer</artifactId>
+	<packaging>war</packaging>
+	<version>1.0.0</version>
+	<name>my-diagram-viewer</name>
+	
+	<!-- 版本信息变量 -->
+	<properties>
+		<!-- 源码文件字符集 -->
+		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+
+		<!-- servlet api版本号 -->
+		<servlet.version>3.1.0</servlet.version>
+		<!-- log4j版本号 -->
+		<log4j.version>1.2.17</log4j.version>
+		<!-- slf4j版本号 -->
+		<slf4j.version>1.7.12</slf4j.version>
+		<!-- mysql jdbc驱动版本号 -->
+		<mysql.version>5.1.38</mysql.version>
+		<!-- apache文件上传库版本号 -->
+		<fileupload.version>1.3.1</fileupload.version>
+		<!-- Apache Http Components版本号 -->
+		<httpcomponents.version>4.5.2</httpcomponents.version>
+		<!-- MyBatis版本号 -->
+		<mybatis.version>3.2.8</mybatis.version>
+		<!-- MyBatis Spring插件版本号 -->
+		<mybatis.spring.version>1.2.2</mybatis.spring.version>
+		<!-- Spring 版本号 -->
+		<spring.version>4.2.5.RELEASE</spring.version>
+		<!-- jackson版本号(SpringMVC输出JSON数据依赖) -->
+		<jackson.version>2.7.3</jackson.version>
+		<!-- Redis java 客户端api Jedis 版本号 -->
+		<jedis.version>2.7.2</jedis.version>
+		<!-- json lib版本号 -->
+		<jsonlib.version>2.4</jsonlib.version>
+		<!--xml bind 版本号 -->
+		<xml.version>2.2</xml.version>
+		<!--httpclient 版本号 -->
+		<httpclient.version>3.1.0</httpclient.version>
+		<!-- fastjson 版本号 -->
+		<fastjson.version>1.2.16</fastjson.version>
+		<!--quartz-scheduler 版本号 -->
+		<quartz-scheduler>2.2.1</quartz-scheduler>
+		<!-- quartz-jobs 版本号 -->
+		<quartz-jobs>2.2.1</quartz-jobs>
+		
+		<activiti.version>5.22.0</activiti.version>
+
+	</properties>
+
+	<dependencies>
+
+		<!-- Setvlet API -->
+		<dependency>
+			<groupId>javax.servlet</groupId>
+			<artifactId>javax.servlet-api</artifactId>
+			<version>${servlet.version}</version>
+		</dependency>
+
+		<!-- log4j -->
+		<dependency>
+			<groupId>log4j</groupId>
+			<artifactId>log4j</artifactId>
+			<version>${log4j.version}</version>
+		</dependency>
+
+		<dependency>
+			<groupId>org.slf4j</groupId>
+			<artifactId>slf4j-log4j12</artifactId>
+			<version>${slf4j.version}</version>
+		</dependency>
+
+		<!-- MySQL JDBC 驱动 -->
+		<dependency>
+			<groupId>mysql</groupId>
+			<artifactId>mysql-connector-java</artifactId>
+			<version>${mysql.version}</version>
+		</dependency>
+
+		<!-- apache文件上传库 -->
+		<dependency>
+			<groupId>commons-fileupload</groupId>
+			<artifactId>commons-fileupload</artifactId>
+			<version>${fileupload.version}</version>
+		</dependency>
+
+		<!-- Apache Http Components -->
+		<dependency>
+			<groupId>org.apache.httpcomponents</groupId>
+			<artifactId>httpclient</artifactId>
+			<version>${httpcomponents.version}</version>
+			<!-- 并非所有项目都要用 -->
+			<!-- 具体项目重新引用 -->
+			<!-- <scope>provided</scope> -->
+		</dependency>
+
+		<!-- MyBatis 核心 -->
+		<dependency>
+			<groupId>org.mybatis</groupId>
+			<artifactId>mybatis</artifactId>
+			<version>${mybatis.version}</version>
+		</dependency>
+
+		<!-- MyBatis Spring 插件 -->
+		<dependency>
+			<groupId>org.mybatis</groupId>
+			<artifactId>mybatis-spring</artifactId>
+			<version>${mybatis.spring.version}</version>
+		</dependency>
+
+		<!-- Spring MVC -->
+		<dependency>
+			<groupId>org.springframework</groupId>
+			<artifactId>spring-webmvc</artifactId>
+			<version>${spring.version}</version>
+		</dependency>
+
+		<!-- Spring web -->
+		<dependency>
+			<groupId>org.springframework</groupId>
+			<artifactId>spring-web</artifactId>
+			<version>${spring.version}</version>
+		</dependency>
+
+		<!-- Spring 事务管理 -->
+		<dependency>
+			<groupId>org.springframework</groupId>
+			<artifactId>spring-tx</artifactId>
+			<version>${spring.version}</version>
+		</dependency>
+
+		<!-- Spring 对数据访问的支持 -->
+		<dependency>
+			<groupId>org.springframework</groupId>
+			<artifactId>spring-jdbc</artifactId>
+			<version>${spring.version}</version>
+		</dependency>
+
+		<!-- Spring MVC返回JSON数据所依赖的库 -->
+		<dependency>
+			<groupId>com.fasterxml.jackson.core</groupId>
+			<artifactId>jackson-databind</artifactId>
+			<version>${jackson.version}</version>
+		</dependency>
+
+		<!-- Redis java 客户端api Jedis -->
+		<dependency>
+			<groupId>redis.clients</groupId>
+			<artifactId>jedis</artifactId>
+			<version>${jedis.version}</version>
+			<!-- 并非所有项目都要用 -->
+			<!-- 具体项目重新引用 -->
+			<scope>provided</scope>
+		</dependency>
+
+		<!-- 阿里数据源 -->
+		<dependency>
+			<groupId>com.alibaba.druid</groupId>
+			<artifactId>druid-wrapper</artifactId>
+			<version>0.2.9</version>
+		</dependency>
+
+		<!-- json lib -->
+		<dependency>
+			<groupId>net.sf.json-lib</groupId>
+			<artifactId>json-lib</artifactId>
+			<version>${jsonlib.version}</version>
+			<classifier>jdk15</classifier>
+		</dependency>
+
+		<!--jaxb-api -->
+		<dependency>
+			<groupId>javax.xml.bind</groupId>
+			<artifactId>jaxb-api</artifactId>
+			<version>${xml.version}</version>
+		</dependency>
+
+		<!-- httpclient -->
+		<dependency>
+			<groupId>org.lucee</groupId>
+			<artifactId>commons-httpclient</artifactId>
+			<version>${httpclient.version}</version>
+		</dependency>
+
+		<!-- alibaba-fastjson -->
+		<dependency>
+			<groupId>com.alibaba</groupId>
+			<artifactId>fastjson</artifactId>
+			<version>${fastjson.version}</version>
+		</dependency>
+
+		<!-- quartz-scheduler -->
+		<dependency>
+			<groupId>org.quartz-scheduler</groupId>
+			<artifactId>quartz</artifactId>
+			<version>${quartz-scheduler}</version>
+		</dependency>
+
+		<!--quartz-jobs -->
+		<dependency>
+			<groupId>org.quartz-scheduler</groupId>
+			<artifactId>quartz-jobs</artifactId>
+			<version>${quartz-jobs}</version>
+		</dependency>
+
+		<!-- Spring dependencies -->
+		<dependency>
+			<groupId>org.springframework</groupId>
+			<artifactId>spring-context-support</artifactId>
+			<version>${spring.version}</version>
+		</dependency>
+		
+		<!-- start activiti -->
+        <dependency>
+            <groupId>org.activiti</groupId>
+            <artifactId>activiti-engine</artifactId>
+            <version>${activiti.version}</version>
+        </dependency>
+        <dependency>
+            <groupId>org.activiti</groupId>
+            <artifactId>activiti-spring</artifactId>
+            <version>${activiti.version}</version>
+        </dependency>
+        <dependency>
+            <groupId>org.activiti</groupId>
+            <artifactId>activiti-json-converter</artifactId>
+            <version>${activiti.version}</version>
+        </dependency>
+
+        <dependency>
+            <groupId>org.activiti</groupId>
+            <artifactId>activiti-explorer</artifactId>
+            <version>${activiti.version}</version>
+            <exclusions>
+                <exclusion>
+                    <artifactId>vaadin</artifactId>
+                    <groupId>com.vaadin</groupId>
+                </exclusion>
+                <exclusion>
+                    <artifactId>dcharts-widget</artifactId>
+                    <groupId>org.vaadin.addons</groupId>
+                </exclusion>
+                <exclusion>
+                    <artifactId>activiti-simple-workflow</artifactId>
+                    <groupId>org.activiti</groupId>
+                </exclusion>
+            </exclusions>
+        </dependency>
+        <dependency>
+            <groupId>org.activiti</groupId>
+            <artifactId>activiti-modeler</artifactId>
+            <version>${activiti.version}</version>
+        </dependency>
+        <!-- end activiti -->
+
+	</dependencies>
+</project>

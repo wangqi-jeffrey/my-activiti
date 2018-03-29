@@ -1,0 +1,410 @@
+
+
+.icon-send {
+    background-image: url(../image/email_go.png) !important;
+}
+
+.icon-save {
+    background-image: url(../image/ext/save.png) !important;
+}
+
+.icon-delete {
+    background-image: url(../image/ext/delete.png) !important;
+}
+
+.icon-add {
+    background-image: url(../image/ext/add.png) !important;
+}
+
+.icon-download {
+    background-image: url(../image/ext/download.png) !important;
+}
+
+.icon-edit {
+    background-image: url(../image/ext/edit.png) !important;
+}
+
+.icon-deploy {
+    background-image: url(../image/ext/deploy.png) !important;
+}
+/**查询*/
+.icon-search {
+    background-image: url(../image/ext/search.png) !important;
+}
+
+/**打印  */
+.icon-print {
+    background-image: url(../image/ext/printer.png) !important;
+}
+
+/**刷新  */
+.icon-refresh {
+    background-image: url(../image/ext/refresh.png) !important;
+}
+.icon-users{
+    background-image: url(../image/ext/users.png) !important;
+}
+.icon-user{
+    background-image: url(../image/ext/user.gif) !important;
+}
+.icon-group{
+    background-image: url(../image/ext/group.png) !important;
+}
+.icon-module{
+    background-image: url(../image/ext/module.png) !important;
+}
+.icon-role{
+    background-image: url(../image/ext/role.png) !important;
+}
+.icon-resource{
+    background-image: url(../image/ext/resource.png) !important;
+}
+.icon-images{
+    background-image: url(../image/ext/images.png) !important;
+}
+.icon-excel{
+    background-image: url(../image/ext/excel.png) !important;
+}
+
+.icon-up{
+    background-image: url(../image/ext/up.gif) !important;
+}
+
+.icon-down{
+    background-image: url(../image/ext/down.gif) !important;
+}
+
+.icon-design{
+    background-image: url(../image/ext/design.png) !important;
+}
+.icon-picture{
+    background-image: url(../image/ext/picture.png) !important;
+}
+.icon-xml{
+    background-image: url(../image/ext/xml.png) !important;
+}
+.icon-model{
+    background-image: url(../image/ext/model.png) !important;
+}
+.icon-switch{
+    background-image: url(../image/ext/switch.png) !important;
+}
+.icon-tick{
+    background-image: url(../image/ext/tick.png) !important;
+}
+.icon-flagblue{
+    background-image: url(../image/ext/flagblue.png) !important;
+}
+.icon-flagred{
+    background-image: url(../image/ext/flagred.png) !important;
+}
+.icon-start{
+    background-image: url(../image/ext/start.png) !important;
+}
+
+/*.icon-detail {
+    background-image: url('../images/detail.png')!important;
+}
+
+导出
+.icon-export {
+    background-image: url('../images/export.png')!important;
+}
+
+
+
+.icon-lock {
+    background-image: url(../images/lock.png) !important;
+}
+
+.icon-unlock {
+    background-image: url(../images/unlock.png) !important;
+}
+
+.icon-info{
+    background-image: url(../images/info.png) !important;
+}*/
+
+
+/*
+2015-06-30
+一级菜单样式
+*/
+
+/*系统退出button*/
+.menuSystemExitButton {
+	border: 1px;
+	background-image: url(../image/button/power.png);
+	background-position: 50% 20%;
+	background-size: 60px 60px;
+	background-repeat: no-repeat;
+	background-color: rgba(229, 106, 106, 0.0);
+}
+
+.menuSystemExitButton-focus {
+	background-image: url(../image/button/power.png);
+	background-position: 50% 20%;
+	background-size: 60px 60px;
+	background-repeat: no-repeat;
+	border: 0px;
+	border-radius:0px;
+	background-color: rgba(9, 131, 213, 0.6);
+}
+
+.menuSystemExitButton:hover {
+	background-image: url(../image/button/power.png);
+	background-position: 50% 20%;
+	background-size: 60px 60px;
+	background-repeat: no-repeat;
+/*  	background-color: rgba(138, 192, 7, 0.8);*/
+	background-color: rgba(54, 141,204, 0.8);
+}
+
+.menuSystemExitButton:active {
+/*	box-shadow: inset 0px 0px 30px rgba(255, 255, 255, 0.6);  */
+background-color: rgba(255, 255, 255, 0.2);
+}
+
+.menuSystemExitButton .x-btn-inner {
+	font-family: "webfont" !important;
+	color: white !important;
+}
+
+
+/* 办公管理 */
+.menuWorkManageButton {
+	border: 1px;
+	background-image: url(../image/button/briefcase.png);
+	background-position: 50% 20%;
+	background-size: 60px 60px;
+	background-repeat: no-repeat;
+	background-color: rgba(229, 106, 106, 0.0);
+}
+
+.menuWorkManageButton-focus {
+	background-image: url(../image/button/briefcase.png);
+	background-position: 50% 20%;
+	background-size: 60px 60px;
+	background-repeat: no-repeat;
+	border: 0px;
+	border-radius:0px;
+	background-color: rgba(9, 131, 213, 0.6);
+}
+
+.menuWorkManageButton:hover {
+	background-image: url(../image/button/briefcase.png);
+	background-position: 50% 20%;
+	background-size: 60px 60px;
+	background-repeat: no-repeat;
+/*  	background-color: rgba(138, 192, 7, 0.8);*/
+	background-color: rgba(54, 141,204, 0.8);
+}
+
+.menuWorkManageButton:active {
+/*	box-shadow: inset 0px 0px 30px rgba(255, 255, 255, 0.6);  */
+background-color: rgba(255, 255, 255, 0.2);
+}
+
+.menuWorkManageButton .x-btn-inner {
+	font-family: "webfont" !important;
+	color: white !important;
+}
+
+/* 库存管理 */
+.menuInventoryManageButton {
+	border: 1px;
+	background-image: url(../image/button/truck.png);
+	background-position: 50% 20%;
+	background-size: 60px 60px;
+	background-repeat: no-repeat;
+	background-color: rgba(229, 106, 106, 0.0);
+}
+
+.menuInventoryManageButton-focus {
+	background-image: url(../image/button/truck.png);
+	background-position: 50% 20%;
+	background-size: 60px 60px;
+	background-repeat: no-repeat;
+	border: 0px;
+	border-radius:0px;
+	background-color: rgba(9, 131, 213, 0.6);
+}
+
+.menuInventoryManageButton:hover {
+	background-image: url(../image/button/truck.png);
+	background-position: 50% 20%;
+	background-size: 60px 60px;
+	background-repeat: no-repeat;
+/*  	background-color: rgba(138, 192, 7, 0.8);*/
+	background-color: rgba(54, 141,204, 0.8);
+}
+
+.menuInventoryManageButton:active {
+/*	box-shadow: inset 0px 0px 30px rgba(255, 255, 255, 0.6);  */
+background-color: rgba(255, 255, 255, 0.2);
+}
+
+.menuInventoryManageButton .x-btn-inner {
+	font-family: "webfont" !important;
+	color: white !important;
+}
+
+
+/* 采购管理 */
+.menuPurchaseManageButton {
+	border: 1px;
+	background-image: url(../image/button/dolly.png);
+	background-position: 50% 20%;
+	background-size: 60px 60px;
+	background-repeat: no-repeat;
+	background-color: rgba(229, 106, 106, 0.0);
+}
+
+.menuPurchaseManageButton-focus {
+	background-image: url(../image/button/dolly.png);
+	background-position: 50% 20%;
+	background-size: 60px 60px;
+	background-repeat: no-repeat;
+	border: 0px;
+	border-radius:0px;
+	background-color: rgba(9, 131, 213, 0.6);
+}
+
+.menuPurchaseManageButton:hover {
+	background-image: url(../image/button/dolly.png);
+	background-position: 50% 20%;
+	background-size: 60px 60px;
+	background-repeat: no-repeat;
+/*  	background-color: rgba(138, 192, 7, 0.8);*/
+	background-color: rgba(54, 141,204, 0.8);
+}
+
+.menuPurchaseManageButton:active {
+/*	box-shadow: inset 0px 0px 30px rgba(255, 255, 255, 0.6);  */
+background-color: rgba(255, 255, 255, 0.2);
+}
+
+.menuPurchaseManageButton .x-btn-inner {
+	font-family: "webfont" !important;
+	color: white !important;
+}
+
+
+/* 人事管理 */
+.menuPersonnelManageButton {
+	border: 1px;
+	background-image: url(../image/button/contacts.png);
+	background-position: 50% 20%;
+	background-size: 60px 60px;
+	background-repeat: no-repeat;
+	background-color: rgba(229, 106, 106, 0.0);
+}
+
+.menuPersonnelManageButton-focus {
+	background-image: url(../image/button/contacts.png);
+	background-position: 50% 20%;
+	background-size: 60px 60px;
+	background-repeat: no-repeat;
+	border: 0px;
+	border-radius:0px;
+	background-color: rgba(9, 131, 213, 0.6);
+}
+
+.menuPersonnelManageButton:hover {
+	background-image: url(../image/button/contacts.png);
+	background-position: 50% 20%;
+	background-size: 60px 60px;
+	background-repeat: no-repeat;
+/*  	background-color: rgba(138, 192, 7, 0.8);*/
+	background-color: rgba(54, 141,204, 0.8);
+}
+
+.menuPersonnelManageButton:active {
+/*	box-shadow: inset 0px 0px 30px rgba(255, 255, 255, 0.6);  */
+background-color: rgba(255, 255, 255, 0.2);
+}
+
+.menuPersonnelManageButton .x-btn-inner {
+	font-family: "webfont" !important;
+	color: white !important;
+}
+
+/* 系统管理 */
+.menuSystemManageButton {
+	border: 1px;
+	background-image: url(../image/button/tools.png);
+	background-position: 50% 20%;
+	background-size: 60px 60px;
+	background-repeat: no-repeat;
+	background-color: rgba(229, 106, 106, 0.0);
+}
+
+.menuSystemManageButton-focus {
+	background-image: url(../image/button/tools.png);
+	background-position: 50% 20%;
+	background-size: 60px 60px;
+	background-repeat: no-repeat;
+	border: 0px;
+	border-radius:0px;
+	background-color: rgba(9, 131, 213, 0.6);
+}
+
+.menuSystemManageButton:hover {
+	background-image: url(../image/button/tools.png);
+	background-position: 50% 20%;
+	background-size: 60px 60px;
+	background-repeat: no-repeat;
+	
+/*  	background-color: rgba(138, 192, 7, 0.8);*/
+	background-color: rgba(54, 141,204, 0.8);
+}
+
+.menuSystemManageButton:active {
+/*	box-shadow: inset 0px 0px 30px rgba(255, 255, 255, 0.6);  */
+background-color: rgba(255, 255, 255, 0.2);
+}
+
+.menuSystemManageButton .x-btn-inner {
+	font-family: "webfont" !important;
+	color: white !important;
+}
+
+/* 系统管理 */
+.menuFlowManageButton {
+	border: 1px;
+	background-image: url(../image/button/crossroads.png);
+	background-position: 50% 20%;
+	background-size: 60px 60px;
+	background-repeat: no-repeat;
+	background-color: rgba(229, 106, 106, 0.0);
+}
+
+.menuFlowManageButton-focus {
+	background-image: url(../image/button/crossroads.png);
+	background-position: 50% 20%;
+	background-size: 60px 60px;
+	background-repeat: no-repeat;
+	border: 0px;
+	border-radius:0px;
+	background-color: rgba(9, 131, 213, 0.6);
+}
+
+.menuFlowManageButton:hover {
+	background-image: url(../image/button/crossroads.png);
+	background-position: 50% 20%;
+	background-size: 60px 60px;
+	background-repeat: no-repeat;
+	
+/*  	background-color: rgba(138, 192, 7, 0.8);*/
+	background-color: rgba(54, 141,204, 0.8);
+}
+
+.menuFlowManageButton:active {
+/*	box-shadow: inset 0px 0px 30px rgba(255, 255, 255, 0.6);  */
+background-color: rgba(255, 255, 255, 0.2);
+}
+
+.menuFlowManageButton .x-btn-inner {
+	font-family: "webfont" !important;
+	color: white !important;
+}

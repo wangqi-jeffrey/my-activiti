@@ -1,0 +1,8 @@
+*/.settings/
+*/target/
+*/.classpath
+*/.mymetadata
+*/.project
+*/.tern-project
+*/.myumldata
+*/.gitignore
